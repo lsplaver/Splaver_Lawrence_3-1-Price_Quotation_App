@@ -3,8 +3,11 @@
     ViewBag.Title = "Price Quotation";
 }
 
-<h1>Price Quotation</h1>
 <div class="container">
+    <header class="jumbotron bg-success text-center text-white text-nowrap">
+        <i class="fas fa-money-bill-alt fa-4x"></i>
+        <h1>@ViewBag.Title</h1>
+    </header>
     <main>
         <form asp-action="Index" method="post">
             <div class="form-group row">
@@ -30,7 +33,7 @@
                 <label class="col-sm-3">@ViewBag.TotalPrice.ToString("C2")</label>
             </div>
             <div class="form-group row">
-                <div class="col offset-3">
+                <div class="col">
                     <button type="submit" class="btn bg-success text-white">Calculate</button>
                     <a asp-action="Index" class="btn bg-success text-white">Clear</a>
                 </div>
