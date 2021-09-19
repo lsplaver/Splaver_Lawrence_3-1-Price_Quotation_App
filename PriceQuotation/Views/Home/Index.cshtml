@@ -6,7 +6,7 @@
 <div class="container">
     <header class="jumbotron bg-success text-center text-white text-nowrap">
         <i class="fas fa-money-bill-alt fa-4x"></i>
-        <h1>@ViewBag.Title</h1>
+        <h1 class="text-white">@ViewBag.Title</h1>
     </header>
     <main>
         <form asp-action="Index" method="post">
@@ -34,8 +34,8 @@
             </div>
             <div class="form-group row">
                 <div class="col">
-                    <button type="submit" class="btn bg-success text-white">Calculate</button>
-                    <a asp-action="Index" class="btn bg-success text-white">Clear</a>
+                    <button type="submit" class="btn bg-success text-white mr-1">Calculate</button>
+                    <a asp-action="Index" class="btn bg-success text-white ml-1">Clear</a>
                 </div>
             </div>
         </form>
